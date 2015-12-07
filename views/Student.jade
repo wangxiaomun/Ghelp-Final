@@ -1,0 +1,121 @@
+doctype html
+html(lang='en')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  head
+    meta(charset='utf-8')
+    title
+        | MicroG-Help
+    meta(name='description', content='MicroGHelp')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+  body
+    header
+      .nvbar.navbar-inverse.navbar-fixed-top
+        .container
+          .nvbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              .text-primary G-Help
+            a.navbar-brand(href='#')
+              .text-primary Home Page
+            a.navbar-brand(href='/profile')
+              .text-primary Profile
+            a.navbar-brand(href='/profile')
+              .text-primary Visit
+          #navbar.navbar-collapse.collapse
+            form.navbar-form.navbar-right(action='/Logoff', method='get')
+               button.btn.btn-success(type='submit') Log off
+      .jumbotron
+        .container
+          .text-primary
+            h1
+              strong Welcome to G-Help
+    #container
+      form.form-horizontal
+        fieldset
+            .row
+                .span12
+                  br
+              .container
+                h2 Your Assigned mentor is 
+                .row
+                  .span12
+                    br
+                  .row
+                    .span12
+                      br
+                  .row
+                    .span12
+                      br
+                form.form-horizontal(role='form')
+                  .form-group
+                  - each item in mentorRows
+                    label.col-xs-2.control-label First Name
+                    .col-xs-10
+                      label.col-xs-2.control-label=item.FirstNAME
+                  .form-group
+                  - each item in mentorRows
+                    label.col-sm-2.control-label Last Name
+                    .col-sm-10
+                      label.col-sm-2.control-label=item.LastNAME
+                  form.form-horizontal(role='form')
+                    .form-group
+                  - each item in mentorRows
+                      label.col-sm-2.control-label Your Mentor's Tel
+                      .col-sm-10
+                        label.col-sm-2.control-label=item.tel
+                    form.form-horizontal(role='form')
+                      .form-group
+                  - each item in mentorRows
+                        label.col-sm-2.control-label Email
+                        .col-sm-10
+                          label.col-sm-2.control-label=item.EMAIL
+              .row
+                .span12
+                  br
+                .row
+                  .span12
+                    br
+                  .row
+                    .span13
+                      br
+                    .row
+                      .span12
+                        br
+
+  
+    .container
+      h2 Available Mentors:
+      .table-responsive
+            table.table
+              thead
+                tr
+                            th MentorID
+                            th First Name
+                            th Last Name
+                            th Address
+                            th Email
+                           
+
+
+
+              - each item in mentorRows2
+                tr
+                            td= item.ID
+                            td= item.FirstNAME
+                            td= item.LastNAME
+                            td= item.Address
+                            td= item.EMAIL				  
+      form(action="/applyMentor", method='post',id='assigning', role='form' )
+       label  Choose the Mentor's ID:
+        br
+        select.table#selectStudent(placeholder="select", name="mentee" required=true,style="width:100px")
+          - each item in mentorRows2
+            option(value= "#{item.ID}") #{item.ID}
+        input(type="submit", id='assign', value="Choose Mentor")

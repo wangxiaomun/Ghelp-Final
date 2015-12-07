@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title MicroG-Help
+    meta(name='description', content='MicroGHelp')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+  body
+    header
+      .nvbar.navbar-inverse.navbar-fixed-top
+        .container
+          .nvbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='#')
+              .text-primary G-Help
+            a.navbar-brand(href='#')
+              .text-primary Home Page
+          #navbar.navbar-collapse.collapse
+            form.navbar-form.navbar-right(action='/Logoff', method='get')
+               button.btn.btn-success(type='submit') Log off
+      .jumbotron
+        .container
+          .text-primary
+            h2 Welcome to G-Help
+    .container
+      .row
+        .col-md-2
+          .well
+            .text-primary
+              h3 Your Student
+            .panel.panel-default
+              .panel-body
+                .list-group
+              - each item in mentorRows
+                  a.list-group-item.list-group-item-danger(href='/timeline')=item.FirstNAME
+        .col-md-6.col-sm-offset-1
+          .well
+
+              .text-primary
+                h2 Welcome 
+                h5 The list in the left side of the page, all the students that are assigned to you are represented.
+                h5 The list in the right side of the page, all the upcoming events with the participant student's names are represented.			
+            .container
+              
+        .col-md-2.col-sm-offset-1
+          .well
+            .text-primary
+              h3 Upcoming Events
+            .panel.panel-default
+              .panel-body
+                .list-group
+              - each item in mentorRows2
+                  a.list-group-item.list-group-item-danger(href='/timeline')=item.NAME + " with " + "'" + item.FirstNAME + "'"
+    footer
+      .container
+        hr
+        p
+          small
+            a(href='http://facebook.com/') Link us
+            | On faceboook
+        p Copyright ? Xiao Wang, 2015
+        p wangxiaomun@gmail.com
+    // Latest compiled and minified JavaScript
+    script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+    | "
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
