@@ -1,0 +1,32 @@
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500001,"User01","User01","Asghar","Mohammadi","s01@mun.ca", "01 Elizabeth ave",null,null,0,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500002,"User02","User02","Sarah","Ayoubian","s02@mun.ca", "02 Elizabeth ave",null,null,0,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500003,"User03","User03","Ali","Meghdadi","s03@mun.ca", "03 Elizabeth ave",null,null,1,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500004,"User04","User04","Khalil","Eslamloo","s04@mun.ca", "04 Elizabeth ave",14,null,1,1,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500005,"User05","User05","Peter","Harley","s05@mun.ca", "05 Elizabeth ave",12,null,1,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500006,"User06","User06","Caroline","Peterson","s06@mun.ca", "06 Elizabeth ave",14,14,1,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500007,"User07","User07","Carole","Woods","s07@mun.ca", "07 Elizabeth ave",null,15,1,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500008,"User08","User08","Michael","Barkley","s08@mun.ca", "08 Elizabeth ave",13,16,1,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500009,"User09","User09","Jeffery","Hamilton","s09@mun.ca", "09 Elizabeth ave",12,15,1,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500010,"User10","User10","Mary","Stockwoods","s10@mun.ca", "10 Elizabeth ave",null,14,1,0,'s');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500011,"User11","User11","John","Dunphy","m01@mun.ca", "01 Water ave",null,null,0,0,'m');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500012,"User12","User12","Emily","Hudson","m02@mun.ca", "02 Water ave",null,null,0,0,'m');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500013,"User13","User13","Jessica","Tremblet","m03@mun.ca", "03 Water ave",null,null,0,0,'m');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500008,"User14","User14","Surheed","Islm","h01@mun.ca", "01 Torbay ave",null,null,0,0,'h');
+Insert into userinfo (studentid,NAMEPASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500008,"User15","User15","Barbara","Mullin","h02@mun.ca", "02 Torbay ave",null,null,0,0,'h');
+Insert into userinfo (studentid,NAME,PASSWORD,FirstNAME,LastNAME,EMAIL,Address,MentorID,HostFamilyID,RequestMentor,RequestHost,Identity) values (201500008,"User16","User16","Brad","Buttler","h03@mun.ca", "03 Torbay ave",null,null,0,0,'h');
+
+
+
+Insert into events (Name,DateTime,PartStuID,PartMntID,EventSTATUS,DecisionSTATUS) values ("Check in ISA",20151203100000,5,14,1,1);
+Insert into events (Name,DateTime,PartStuID,PartMntID,EventSTATUS,DecisionSTATUS) values ("Bank account",20151203100000,10,12,1,1);
+Insert into events (Name,DateTime,PartStuID,PartMntID,EventSTATUS,DecisionSTATUS) values ("Registration",20151203100000,9,13,0,1);
+Insert into events (Name,DateTime,PartStuID,PartMntID,EventSTATUS,DecisionSTATUS) values ("Drop course",20151203100000,6,12,0,1);
+Insert into events (Name,DateTime,PartStuID,PartMntID,EventSTATUS,DecisionSTATUS) values ("Exams",20151203100000,7,14,0,0);
+Insert into events (Name,DateTime,PartStuID,PartMntID,EventSTATUS,DecisionSTATUS) values ("Filling out CEQ",20151203100000,10,12,0,0);
+Insert into events (Name,DateTime,PartStuID,PartMntID,EventSTATUS,DecisionSTATUS) values ("Job Fare",20151203100000,7,14,0,0);
+Insert into events (Name,DateTime,PartStuID,PartMntID,EventSTATUS,DecisionSTATUS) values ("Tax return",20151203100000,10,12,0,0);
+
+
+
+
+
